@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://cdp4osmtb1053"]
+
+[ext_resource type="Texture2D" uid="uid://dwl6e60rovrvr" path="res://icon.svg" id="1_wtcfe"]
+[ext_resource type="Script" uid="uid://dqsdrq38hi0g3" path="res://player_character.gd" id="2_0e48y"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kq5xs"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_0e48y"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_rbnfp"]
+
+[node name="Node2D" type="Node2D" unique_id=254293557]
+
+[node name="PlayerCharacter" type="Sprite2D" parent="." unique_id=1287480307]
+z_index = 1
+material = SubResource("ShaderMaterial_kq5xs")
+texture = ExtResource("1_wtcfe")
+script = ExtResource("2_0e48y")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=322518481]
+mesh = SubResource("BoxMesh_0e48y")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="." unique_id=1744048407]
+position = Vector2(0, -1.0000001)
+scale = Vector2(1, -1.0000002)
+mesh = SubResource("SphereMesh_rbnfp")
