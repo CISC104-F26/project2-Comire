@@ -9,4 +9,9 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if Input.is_action_pressed("move_right"):
 		position = position + Vector2(1, 0) * movement_speed * delta
-	
+	if Input.is_action_pressed("move_down"):
+		position = position + Vector2(0, 1) * movement_speed * delta
+	if Input.is_action_pressed("move_left"):
+		position = position + Vector2(-1, 0) * movement_speed * delta
+	if Input.is_action_pressed("move_up"):
+		position = position + Vector2(0, -1) * movement_speed * delta
