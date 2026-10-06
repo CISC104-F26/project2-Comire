@@ -27,7 +27,7 @@ mesh = SubResource("BoxMesh_rbnfp")
 script = ExtResource("1_a202f")
 
 [node name="Camera3D" type="Camera3D" parent="Player Character 3D" unique_id=36455886]
-transform = Transform3D(0.25881907, 0, -0.9659258, 0, 1, 0, 0.9659258, 0, 0.25881907, -3.7080038, 1.2098358, 0.73247075)
+transform = Transform3D(0.25881907, 0, -0.9659258, 0, 1, 0, 0.9659258, 0, 0.25881907, -1.7080038, 1.2098358, 0.73247075)
 
 [node name="Mesh 1" type="MeshInstance3D" parent="." unique_id=2091606668]
 transform = Transform3D(0.9470096, -0.25889915, 0.19011568, 0.28487486, 0.9504113, -0.12475845, -0.14838822, 0.17230663, 0.97380257, 2.0778975, 1.2064689, 0)
