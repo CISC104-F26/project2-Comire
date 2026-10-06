@@ -9,6 +9,8 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("change_color"):
+		modulate = Color.AQUA
 	if Input.is_action_just_pressed("respawn"):
 		global_position = get_global_mouse_position()
 	if Input.is_action_pressed("move_right"):
